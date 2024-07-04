@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:netflix_clone_app/dummy_db.dart';
 import 'package:netflix_clone_app/utils/constants/color_constants.dart';
 import 'package:netflix_clone_app/utils/constants/image_constants.dart';
+import 'package:netflix_clone_app/view/home_screen/home_screen.dart';
 
 class UsernameScreen extends StatefulWidget {
   const UsernameScreen({super.key});
@@ -29,18 +31,63 @@ class _UsernameScreenState extends State<UsernameScreen> {
         ),
       ),
       backgroundColor: ColorConstants.mainBlack,
-      body: GridView.builder(
-        itemCount: 4,
-        gridDelegate:
-            SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
-        itemBuilder: (context, index) => Container(
-          height: 150,
-          width: 150,
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(28),
-              image: DecorationImage(
-                  image: AssetImage(ImageConstants.Userimage_1))),
-        ),
+      body: Center(
+        child: GridView.builder(
+            padding: EdgeInsets.symmetric(horizontal: 75),
+            shrinkWrap: true,
+            itemCount: DummyDb.userList.length + 1,
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                mainAxisSpacing: 10,
+                crossAxisSpacing: 10,
+                mainAxisExtent: 130),
+            itemBuilder: (context, index) {
+              if (index < DummyDb.userList.length) {
+                return InkWell(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => HomeScreen(),
+                        ));
+                  },
+                  child: Column(children: [
+                    Image.asset(DummyDb.userList[index]['imagepath']),
+                    SizedBox(
+                      height: 4,
+                    ),
+                    Text(
+                      DummyDb.userList[index]['name'],
+                      style: TextStyle(
+                          fontSize: 13.25, color: ColorConstants.mainWhite),
+                    )
+                  ]),
+                );
+              } else {
+                return InkWell(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => HomeScreen(),
+                        ));
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset(ImageConstants.userimage_5),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Text(
+                        'Add Profile',
+                        style: TextStyle(
+                            fontSize: 13.25, color: ColorConstants.mainWhite),
+                      )
+                    ],
+                  ),
+                );
+              }
+            }),
       ),
     );
   }
