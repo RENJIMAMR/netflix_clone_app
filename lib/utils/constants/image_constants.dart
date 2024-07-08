@@ -5,4 +5,11 @@ class ImageConstants {
   static const Userimage_3 = 'assets/images/user_3.png';
   static const Userimage_4 = 'assets/images/user_4.png';
   static const userimage_5 = 'assets/images/user_5.png';
+  static const home_screen_bg = 'assets/images/home_screen_bg.png';
+  static const N_logo = 'assets/images/n_logo.png';
+  static const Streaming_icon = 'assets/images/streaming_icon.png';
+  static const show1 = 'assets/images/show1.png';
+  static const show2 = 'assets/images/show2.png';
+  static const show3 = 'assets/images/show3.png';
+  static const show4 = 'assets/images/show4.jpeg';
 }

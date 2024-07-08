@@ -66,11 +66,23 @@ class _UsernameScreenState extends State<UsernameScreen> {
               } else {
                 return InkWell(
                   onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => HomeScreen(),
-                        ));
+                    setState(() {
+                      DummyDb.userList.add({
+                        "imagepath": ImageConstants.Userimage_1,
+                        'name': 'Ram'
+                      });
+                    });
+                    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        backgroundColor: ColorConstants.primaryRed,
+                        content: Text(
+                          'Profile Added Successfully',
+                          style: TextStyle(color: ColorConstants.mainWhite),
+                        )));
+                    // Navigator.push(
+                    //     context,
+                    //     MaterialPageRoute(
+                    //       builder: (context) => HomeScreen(),
+                    //     ));
                   },
                   child: Column(
                     children: [
