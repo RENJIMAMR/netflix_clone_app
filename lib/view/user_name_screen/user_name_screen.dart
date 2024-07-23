@@ -3,6 +3,8 @@ import 'package:flutter/widgets.dart';
 import 'package:netflix_clone_app/dummy_db.dart';
 import 'package:netflix_clone_app/utils/constants/color_constants.dart';
 import 'package:netflix_clone_app/utils/constants/image_constants.dart';
+import 'package:netflix_clone_app/view/bottom_nav_screen/bottom_nav_screen.dart';
+import 'package:netflix_clone_app/view/global_widgets/username_card.dart';
 import 'package:netflix_clone_app/view/home_screen/home_screen.dart';
 
 class UsernameScreen extends StatefulWidget {
@@ -43,25 +45,27 @@ class _UsernameScreenState extends State<UsernameScreen> {
                 mainAxisExtent: 130),
             itemBuilder: (context, index) {
               if (index < DummyDb.userList.length) {
-                return InkWell(
-                  onTap: () {
+                return UsernameCard(
+                  imagePath: DummyDb.userList[index]['imagepath'],
+                  username: DummyDb.userList[index]['name'],
+                  oncardpressed: () {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => HomeScreen(),
+                          builder: (context) => BottomNavScreen(),
                         ));
                   },
-                  child: Column(children: [
-                    Image.asset(DummyDb.userList[index]['imagepath']),
-                    SizedBox(
-                      height: 4,
-                    ),
-                    Text(
-                      DummyDb.userList[index]['name'],
-                      style: TextStyle(
-                          fontSize: 13.25, color: ColorConstants.mainWhite),
-                    )
-                  ]),
+                  // Column(children: [
+                  //   Image.asset(DummyDb.userList[index]['imagepath']),
+                  //   SizedBox(
+                  //     height: 4,
+                  //   ),
+                  //   Text(
+                  //     DummyDb.userList[index]['name'],
+                  //     style: TextStyle(
+                  //         fontSize: 13.25, color: ColorConstants.mainWhite),
+                  //   )
+                  // ]),
                 );
               } else {
                 return InkWell(

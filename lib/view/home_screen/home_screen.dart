@@ -37,6 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
               iscircle: true,
             ),
             MoviesCardBuilderWidget(
+              haveInfoCard: true,
               PosterImages: DummyDb.Movieposterlist2,
               title: 'Continue Watching for Emenalo',
             ),
@@ -104,7 +105,7 @@ class _HomeScreenState extends State<HomeScreen> {
           padding: EdgeInsets.symmetric(vertical: 7.3, horizontal: 20),
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(6),
-              color: ColorConstants.lightgrey),
+              color: ColorConstants.greyC4C4C4),
           child: Row(
             children: [
               Icon(

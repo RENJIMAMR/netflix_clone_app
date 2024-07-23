@@ -12,4 +12,7 @@ class ImageConstants {
   static const show2 = 'assets/images/show2.png';
   static const show3 = 'assets/images/show3.png';
   static const show4 = 'assets/images/show4.jpeg';
+  static const whatsapp = 'assets/images/facebookLogo.png';
+  static const facebook = 'assets/images/whatsappLogo.png';
+  static const gmail = 'assets/images/gmailLogo.png';
 }

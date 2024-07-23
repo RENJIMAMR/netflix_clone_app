@@ -11,11 +11,13 @@ class MoviesCardBuilderWidget extends StatelessWidget {
     this.customWidth = 103,
     required this.title,
     required this.PosterImages,
+    this.haveInfoCard = false,
   });
   final bool iscircle;
   final double customHeight, customWidth;
   final String title;
   final List<String> PosterImages;
+  final bool haveInfoCard;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -44,6 +46,38 @@ class MoviesCardBuilderWidget extends StatelessWidget {
             itemBuilder: (context, index) => Padding(
               padding: const EdgeInsets.only(left: 12),
               child: Container(
+                child: Visibility(
+                  visible: haveInfoCard,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Container(
+                        height: 3,
+                        color: ColorConstants.grey_cont_shade,
+                      ),
+                      Container(
+                        padding: EdgeInsets.symmetric(vertical: 7),
+                        color: ColorConstants.mainBlack,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Icon(
+                              Icons.info_outline,
+                              size: 24,
+                              color: ColorConstants.mainWhite,
+                            ),
+                            // SizedBox(width:31 ,),
+                            Icon(
+                              Icons.more_vert,
+                              size: 16,
+                              color: ColorConstants.mainWhite,
+                            )
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                ),
                 decoration: BoxDecoration(
                   shape: iscircle
                       ? BoxShape.circle

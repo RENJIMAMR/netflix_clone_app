@@ -58,4 +58,121 @@ class DummyDb {
     'https://i.pinimg.com/474x/44/8a/1a/448a1a7e20ccf078f775dd0f7e5a4f91.jpg',
     'https://i.pinimg.com/474x/99/1e/c3/991ec380489792e40377dd0464093373.jpg'
   ];
+
+  //search page data
+  static List<Map> searchDatas = [
+    {
+      'url':
+          'https://i.pinimg.com/474x/2c/b6/e7/2cb6e7add8c2e8c7df1a48d34df627b3.jpg',
+      'title': 'Into The Woods'
+    },
+    {
+      'url':
+          "https://i.pinimg.com/474x/68/06/f6/6806f65eab9cca1301d8aa530b20692b.jpg",
+      'title': 'A Fairy Tale-After All'
+    },
+    {
+      'url':
+          "https://i.pinimg.com/474x/8b/16/ab/8b16abeeeb0cbbfe0cd6b6ab9d708df2.jpg",
+      'title': 'Monster House'
+    },
+    {
+      'url':
+          "https://i.pinimg.com/474x/75/89/35/75893516dce33b240b2afb999ae7cc5e.jpg",
+      'title': 'Haunted Mansion'
+    },
+    {
+      'url':
+          "https://i.pinimg.com/474x/40/b1/b9/40b1b9b79148bbf1919aef5fed7fd1cb.jpg",
+      'title': 'The Copy Cat'
+    },
+    {
+      'url':
+          "https://i.pinimg.com/474x/99/27/2b/99272b44199c2347c5d3eb11d608dc00.jpg",
+      'title': 'The Roses Of Blackwood Castle'
+    },
+    {
+      'url':
+          "https://i.pinimg.com/474x/99/1e/c3/991ec380489792e40377dd0464093373.jpg",
+      'title': 'I kill Giants'
+    },
+    {
+      'url':
+          "https://i.pinimg.com/474x/8c/57/ab/8c57abb4aa5927bfe95d8324485b45f3.jpg",
+      'title': 'Peter Pan'
+    },
+    {
+      'url':
+          "https://i.pinimg.com/474x/4e/55/a7/4e55a708018a35b69f9f240140d0041b.jpg",
+      'title': 'Upside Down Magic'
+    }
+  ];
+  //data for coming soon screen
+  static List<Map> customVideoCardData = [
+    {
+      'url':
+          'https://i.pinimg.com/474x/37/d8/29/37d82982ad599b1e4134906404d17428.jpg',
+      'title': 'Castle & Castle'
+    },
+    {
+      'url':
+          'https://i.pinimg.com/474x/83/a7/cd/83a7cdca04c09bfbc329d80e2af3dee4.jpg',
+      'title': 'Mouna'
+    },
+    {
+      'url':
+          'https://i.pinimg.com/474x/5c/1b/e6/5c1be618f5231868007712e278b6f8ad.jpg',
+      'title': 'The Killer'
+    },
+    {
+      'url':
+          'https://i.pinimg.com/474x/4e/55/a7/4e55a708018a35b69f9f240140d0041b.jpg',
+      'title': 'movie'
+    },
+    {
+      'url':
+          'https://i.pinimg.com/474x/ee/55/75/ee55756b5dc1b7df15af705ed4ed2a49.jpg',
+          'title': 'movie'
+    },
+    {
+      'url':
+          'https://i.pinimg.com/474x/44/8a/1a/448a1a7e20ccf078f775dd0f7e5a4f91.jpg',
+          'title': 'movie'
+    },
+    {
+      'url':
+          'https://i.pinimg.com/474x/99/1e/c3/991ec380489792e40377dd0464093373.jpg',
+          'title': 'movie'
+    }
+  ];
+  //data for mylist screen
+  static List MyListData = [
+    'https://i.pinimg.com/474x/c4/eb/ba/c4ebba51f9884760922dcfd095bada40.jpg',
+    'https://i.pinimg.com/564x/e0/cc/67/e0cc670c8b292b6eb77d406388d50835.jpg',
+    'https://i.pinimg.com/474x/78/f0/2e/78f02e6a0ae0e2e86316224de52cd8df.jpg',
+    'https://i.pinimg.com/474x/3b/0f/93/3b0f93dc62c42c5e0b92bad1943d5a54.jpg',
+    'https://i.pinimg.com/474x/fb/c9/c0/fbc9c07953158b4d2f0fea1b2aff7107.jpg',
+    'https://i.pinimg.com/474x/f0/eb/d6/f0ebd6d772eaa8221f7b9ab82f4e41a5.jpg',
+    'https://i.pinimg.com/474x/9b/51/b2/9b51b2bb1f24c6268958ad29ffd7e6f9.jpg',
+    'https://i.pinimg.com/474x/68/06/f6/6806f65eab9cca1301d8aa530b20692b.jpg',
+    'https://i.pinimg.com/474x/fa/94/09/fa94099cb437d74c369e0708d477251b.jpg',
+    'https://i.pinimg.com/474x/97/97/e0/9797e0ae0cc80abefedeac55f3f186cf.jpg',
+    'https://i.pinimg.com/474x/40/98/18/409818dfe281e9b443784682d6a3e036.jpg',
+    'https://i.pinimg.com/474x/b0/fd/57/b0fd57f3a257b18036fa16a188651888.jpg',
+    'https://i.pinimg.com/474x/cf/c8/99/cfc899bbb210026bcb64c32ce80dd9ac.jpg',
+    'https://i.pinimg.com/474x/5e/1a/3a/5e1a3a1fbe6a3c0469db7c7a026eeefe.jpg',
+    'https://i.pinimg.com/474x/fa/94/09/fa94099cb437d74c369e0708d477251b.jpg',
+    'https://i.pinimg.com/474x/31/12/1d/31121d2058a5aa4da918d4eca3aec39f.jpg',
+    'https://i.pinimg.com/474x/06/8e/47/068e4700ce144ddfb8b5863b7b3eafd7.jpg',
+    'https://i.pinimg.com/474x/87/e9/9e/87e99eb0661a04d5350105727ac3be23.jpg',
+    'https://i.pinimg.com/474x/37/d8/29/37d82982ad599b1e4134906404d17428.jpg',
+    'https://i.pinimg.com/474x/83/a7/cd/83a7cdca04c09bfbc329d80e2af3dee4.jpg',
+    'https://i.pinimg.com/474x/5c/1b/e6/5c1be618f5231868007712e278b6f8ad.jpg',
+    'https://i.pinimg.com/474x/4e/55/a7/4e55a708018a35b69f9f240140d0041b.jpg',
+    'https://i.pinimg.com/474x/ee/55/75/ee55756b5dc1b7df15af705ed4ed2a49.jpg',
+    'https://i.pinimg.com/474x/44/8a/1a/448a1a7e20ccf078f775dd0f7e5a4f91.jpg',
+    'https://i.pinimg.com/474x/99/1e/c3/991ec380489792e40377dd0464093373.jpg',
+    'https://i.pinimg.com/474x/cf/c1/09/cfc109de26321ca02ca4e5316b83c4f3.jpg',
+    'https://i.pinimg.com/474x/0b/3c/16/0b3c16298afba9887b1a8f26ec7d4dcd.jpg',
+  ];
 }
